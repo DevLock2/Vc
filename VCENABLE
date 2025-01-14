@@ -57,3 +57,10 @@ local Button = MainTab:CreateButton({
        
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = Script hecho por: bat-J0aquihn",
+   Callback = function()
+       
+   end,
+})
