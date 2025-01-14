@@ -1,0 +1,59 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Bat VC HUB",
+   LoadingTitle = "VC SCRIPT",
+   LoadingSubtitle = "by bat",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Example Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key | Bat Hub",
+      Subtitle = "Key Sistema",
+      Note = "key: soy bat",
+      FileName = "Discord: bat_.1", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"soy bat"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("🎤 Vc", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Voice")
+
+Rayfield:Notify({
+   Title = "Ejecutando script",
+   Content = "¿que se pone aqui?",
+   Duration = 5,
+   Image = 13047715178,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Habilitar VC",
+   Callback = function()
+       game:GetService("VoiceChatService"):joinVoice()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "AutoVC --BETA--",
+   Callback = function()
+       
+   end,
+})
