@@ -16,7 +16,7 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Key | Bat Hub",
+      Title = "Key | Bat -J0aquihn- Hub",
       Subtitle = "Key Sistema",
       Note = "key: soy bat",
       FileName = "Discord: bat_.1", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
@@ -53,13 +53,6 @@ local Button = MainTab:CreateButton({
 
 local Button = MainTab:CreateButton({
    Name = "AutoVC --BETA--",
-   Callback = function()
-       
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = Script hecho por: bat-J0aquihn",
    Callback = function()
        
    end,
