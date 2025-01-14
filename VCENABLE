@@ -52,7 +52,7 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "AutoVC --BETA--",
+   Name = "AutoVC --BETA--, Contactame: bat_.1",
    Callback = function()
        
    end,
